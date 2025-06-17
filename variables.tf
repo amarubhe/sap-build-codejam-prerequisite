@@ -1,0 +1,35 @@
+variable "admin_email" {
+    description = "BTP admin user email"
+    type        = string
+    default     = "amar.ubhe@sap.com"
+}
+
+variable "admin_password" {
+    description = "BTP admin password"
+    type        = string
+    sensitive   = true
+}
+
+variable "globalaccount" {
+  type        = string
+  description = "The globalaccount subdomain.(e.g zzzzzztrial-ga)"
+  default     = ""
+}
+
+variable "custom_idp" {
+  type        = string
+  description = "Defines the custom IDP to be used for the subaccount(e.g zzzzzz.trial-accounts.ondemand.com)"
+  default     = ""
+
+  validation {
+    condition     = can(regex("^[a-z-]", var.custom_idp))
+    error_message = "Please enter a valid entry for the custom-idp of the subaccount."
+  }
+}
+
+variable "custom_idp_origin" {
+  type        = string
+  description = "Defines the custom IDP origin for the role collection"
+  default     = "sap.custom"
+}
+
