@@ -1,7 +1,6 @@
 variable "admin_email" {
     description = "BTP admin user email"
     type        = string
-    default     = "amar.ubhe@sap.com"
 }
 
 variable "admin_password" {
