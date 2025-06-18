@@ -15,3 +15,5 @@
 terraform.rc
 
 *.tfstate
+
+*.tfvars
