@@ -25,15 +25,6 @@ variable "subaccount_name" {
   }
 }
 
-# variable "custom_idp" {
-#   type        = string
-#   description = "Defines the custom IDP to be used for the subaccount(e.g zzzzzz.trial-accounts.ondemand.com)"
-#   default     = "azw61poxu.trial-accounts.ondemand.com"
-#   validation {
-#     condition     = can(regex("^[a-z-]", var.custom_idp))
-#     error_message = "Please enter a valid entry for the custom-idp of the subaccount."
-#   }
-# }
 
 variable "custom_idp_origin" {
   type        = string

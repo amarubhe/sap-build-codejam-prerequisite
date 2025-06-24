@@ -33,7 +33,3 @@ output "cloudfoundry" {
   }
 }
 
-# output "id" {
-#   description = "The ID of the trial account"
-#   value       = one(btp_subaccount.user_subaccount).id
-# }
