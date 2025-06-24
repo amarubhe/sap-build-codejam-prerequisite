@@ -1,5 +1,9 @@
 terraform {
   required_providers {
+    random = {
+      source  = "hashicorp/random"
+      version = "3.7.2"
+    }
     btp = {
       source  = "SAP/btp"
       version = "1.12.0"
@@ -19,5 +23,8 @@ provider "btp" {
 }
 
 provider "cloudfoundry" {
-  api_url = module.trialaccount.cloudfoundry.api_endpoint
+  #api_url = module.subaccount.cloudfoundry.api_endpoint
+  api_url =   "https://api.cf.us10-001.hana.ondemand.com"
+  user          = var.admin_email
+  password      = var.admin_password
 }
