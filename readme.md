@@ -8,13 +8,15 @@ This repository contains scripts to automate BTP subaccount setup using Terrafor
 
 ---
 
-## Pre-requisites 
+## Pre-requisites
 
 Before starting the deployment process, ensure the following:
 
 - You are an **administrator** of the SAP BTP **Global Account**.
 - The Global Account has the **required entitlements** assigned (e.g., relevant service plans used in the Terraform scripts).
 - The Global Account has sufficient **resource quotas** (e.g., application runtime, service instances).
+
+Note: By Default, these permissions, entitlements, quotas should already be available if this is a fresh BTP Trial account(ie Build Apps is not already subscribed in this BTP global account), so no additional setup is necessary.
 
 ---
 
