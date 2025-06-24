@@ -1,4 +1,4 @@
-# Build Code CodeJam Pre-requisites:
+# SAP Build CodeJam Pre-requisites:
 
 ## Objective
 Automate the steps involved in the pre-requisites for [ SAP Build CodeJam ](https://developers.sap.com/tutorials/codejam-0-prerequisites.html)
