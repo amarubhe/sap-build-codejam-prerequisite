@@ -1,4 +1,4 @@
 admin_email = "Enter your btp email"
 admin_password = "Enter your password"
-globalaccount = "globalaccount-subdomain"
-subaccount_name= "subaccount_name to create btp subaccount"
+globalaccount = "xxxtrial-ga"
+subaccount_name= "trial"
