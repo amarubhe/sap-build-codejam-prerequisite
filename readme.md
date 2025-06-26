@@ -29,7 +29,7 @@ For information on how to install the Terraform CLI, please refer to the officia
 ## 2. Running the Scripts
 
 1. Clone this repository.
-2. Rename `sample.tfvars.exmaple` to `sample.tfvars` with your BTP email, password, global account subdomain & subaccount name(Refer Step 3 to get the sub domain name).
+2. Rename `sample.tfvars.exmaple` to `sample.tfvars` with your BTP email, password, global account subdomain(Refer Step 3 to get the sub domain name) & subaccount name(can be trial or dev etc).
 3. Run the following commands:
      ```sh
      terraform init
@@ -44,8 +44,8 @@ For information on how to install the Terraform CLI, please refer to the officia
 ## 3. How to Get Your Subdomain
 
 - Log in to your BTP cockpit.
-- Navigate to your btp global account.
-- The subdomain is shown in the global account explorer.
+- Navigate to your BTP global account.
+- The global account subdomain is shown in the global account explorer.
 
 ![Subdomain Screenshot](./assets/global-account-subdomain.png)
 
