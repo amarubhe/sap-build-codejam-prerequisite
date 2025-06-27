@@ -52,4 +52,24 @@ For information on how to install the Terraform CLI, please refer to the officia
 
 ---
 
+## Troubleshooting tips
+
+If you deleted some instances manually from BTP cockpit, the state would be out of sync for terraform, in order to remove **all** the services from the terraform state use the following command in the terminal
+
+`terraform state list | xargs -n1 terraform state rm`
+
+To remove an individual resources, use
+
+`terraform state rm <resource_name>`
+
+for eg: `terraform state rm cloudfoundry_space.space` to delete a cloud foundry resource.
+
+To check the terraform state, use
+
+`terraform state list`
+
+If for some reason, only SAP Build Apps failed to install while running the script, use the below command to install only sap build apps resource
+
+`terraform apply -target=btp_subaccount_entitlement.sap_build_apps -target=btp_subaccount_subscription.sap-build-apps_free`
+
 For further feedback or questions, please contact the repository maintainers.
