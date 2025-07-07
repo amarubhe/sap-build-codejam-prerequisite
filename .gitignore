@@ -1,21 +1,12 @@
-# Local .terraform directories
-**/.terraform/*
-
-# Ignore variables files
-*.auto.tfvars
-
-# Ignore override files
-*.tfoverride
-
-# Ignore environment-specific files
-.envrc
-
-# Ignore CLI configuration files
-.terraformrc
-terraform.rc
-
-*.tfstate
-
-*.tfvars
-*.lock.hcl
-*.lock.info
+*.d.ts
+*.js
+node_modules
+cdktf.out
+cdktf.log
+*terraform.*.tfstate*
+.gen
+.terraform
+tsconfig.tsbuildinfo
+!jest.config.js
+!setup.js
+.env

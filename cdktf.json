@@ -1,0 +1,12 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node main.ts",
+  "projectId": "728985d7-7be4-4192-8a3e-c0e3cfcbc6e3",
+  "sendCrashReports": "false",
+  "terraformProviders": [
+    "SAP/btp@~> 1.14",
+    "cloudfoundry/cloudfoundry@~> 1.7"
+  ],
+  "terraformModules": [],
+  "context": {}
+}
