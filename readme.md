@@ -1,4 +1,7 @@
-# Build Code CodeJam Pre-requisites
+# SAP Build CodeJam Pre-requisites:
+
+## Objective
+Automate the steps involved in the pre-requisites for [ SAP Build CodeJam ](https://developers.sap.com/tutorials/codejam-0-prerequisites.html)
 
 ## Objective
 Automate the steps involved in the pre-requisites for [ SAP Build CodeJam ](https://developers.sap.com/tutorials/codejam-0-prerequisites.html)
@@ -8,7 +11,7 @@ This repository contains scripts to automate BTP subaccount setup using Terrafor
 
 ---
 
-## Prerequisites 
+## Pre-requisites
 
 Before starting the deployment process, ensure the following:
 - **Node.js (v18 or higher)** and **npm** are installed.
