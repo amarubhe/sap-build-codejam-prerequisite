@@ -3,9 +3,6 @@
 ## Objective
 Automate the steps involved in the pre-requisites for [ SAP Build CodeJam ](https://developers.sap.com/tutorials/codejam-0-prerequisites.html)
 
-## Objective
-Automate the steps involved in the pre-requisites for [ SAP Build CodeJam ](https://developers.sap.com/tutorials/codejam-0-prerequisites.html)
-
 ## Overview
 This repository contains scripts to automate BTP subaccount setup using Terraform. Please follow the instructions below for initial setup and execution.
 
