@@ -17,7 +17,7 @@ Before starting the deployment process, ensure the following:
 - The Global Account has the **required entitlements** assigned (e.g., relevant service plans used in the Terraform scripts).
 - The Global Account has sufficient **resource quotas** (e.g., application runtime, service instances).
 
-Note: By Default, these permissions, entitlements, quotas should already be available if this is a fresh BTP Trial account(i.e. Build Apps is not already subscribed in this BTP global account), so no additional setup is necessary.
+Note: By default, these permissions, entitlements, quotas should already be available if this is a fresh BTP Trial account(i.e. Build Apps is not already subscribed in this BTP global account), so no additional setup is necessary.
 
 ---
 
@@ -39,7 +39,7 @@ npm install --global cdktf-cli@latest
 ## 2. Running the Scripts
 
 1. Clone this repository.
-2. rename `.env.example` to `.env` and fill in your BTP email, password, global account subdomain & subaccount name.
+2. Rename `.env.example` to `.env` and fill in your BTP email, password, global account subdomain & subaccount name.
 3. Run the following command to deploy all required BTP services for the codejam prerequisite:
 ```sh
 npm run deploy
