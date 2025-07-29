@@ -396,7 +396,7 @@ class BuildCodeBoosterStack extends TerraformStack {
                   Name: "SAP-Build-Apps-Runtime",
                   ProxyType: "Internet",
                   Type: "HTTP",
-                  URL: `https://${props.subaccountDomain}.${props.subaccountRegion}.apps.sap.hana.ondemand.com`,
+                  URL: `https://${props.subaccountDomain}.cr1.${props.subaccountRegion}.apps.build.cloud.sap/`,
                 },
               ],
               existing_destinations_policy: "update",
