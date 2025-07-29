@@ -30,8 +30,8 @@ if(envConfig.use_existing_subaccount === "false") {
     subaccountRegion: subaccountStack.newBTPSubaccount.region,
   });
   new BuildCodeJamPrerequisiteStack(app, "build_code_jam_prerequisite", {
-    subaccountDomain: envConfig.btp_subaccount_domain,
-    subaccountRegion: envConfig.btp_subaccount_region
+    subaccountDomain: subaccountStack.newBTPSubaccount.subdomain,
+    subaccountRegion: subaccountStack.newBTPSubaccount.region,
   });
 }else{
   log("Using existing subaccount, skipping subaccount and cloud foundry setup.");
