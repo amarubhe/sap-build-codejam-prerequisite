@@ -17,12 +17,12 @@ Before starting the deployment process, ensure the following:
 - The Global Account has the **required entitlements** assigned (e.g., relevant service plans used in the Terraform scripts).
 - The Global Account has sufficient **resource quotas** (e.g., application runtime, service instances).
 
-Note: By Default, these permissions, entitlements, quotas should already be available if this is a fresh BTP Trial account(ie Build Apps is not already subscribed in this BTP global account), so no additional setup is necessary.
+Note: By default, these permissions, entitlements, quotas should already be available if this is a fresh BTP Trial account(i.e. Build Apps is not already subscribed in this BTP global account), so no additional setup is necessary.
 
 ---
 
 ## 1. Prerequisite Software Installation (Local setup)
-### Node JS
+### Node.js
 Download and install Node.js from the official website: 👉 [https://nodejs.org/](https://nodejs.org/)
 
 ### Terraform CLI
@@ -39,7 +39,7 @@ npm install --global cdktf-cli@latest
 ## 2. Running the Scripts
 
 1. Clone this repository.
-2. rename `.env.exmaple` to `.env` with your BTP email, password, global account subdomain & subaccount name.
+2. Rename `.env.example` to `.env` and fill in your BTP email, password, global account subdomain & subaccount name.
 3. Run the following command to deploy all required BTP services for the codejam prerequisite:
 ```sh
 npm run deploy
@@ -49,8 +49,8 @@ npm run deploy
 ## 3. How to Get Your Global Account Subdomain
 
 - Log in to your BTP cockpit.
-- Navigate to your btp global account.
-- The global account subdomain is shown in the global account explorer.
+- Navigate to your BTP global account.
+- The global account subdomain is shown in the Global Account explorer.
 
 ![Subdomain Screenshot](./assets/global-account-subdomain.png)
 
