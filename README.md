@@ -42,6 +42,7 @@ npm install --global cdktf-cli@latest
 2. Rename `.env.example` to `.env` and fill in your BTP email, password, global account subdomain & subaccount name.
 3. Run the following command to deploy all required BTP services for the codejam prerequisite:
 ```sh
+npm install
 npm run deploy
 ```
 ---
